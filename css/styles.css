@@ -1,0 +1,187 @@
+body {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+p {
+  color: #8f8f8f
+}
+
+/* Heading */
+
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+#title {
+  text-align: left;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.coloured-section {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+/* navigation bar */
+.navbar {
+  padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+/* title */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.title-image {
+  width: 60%;
+  transform: rotate(20deg);
+  position: absolute;
+  right: 25%;
+}
+
+/* Features */
+#features {
+  padding: 7% 15%;
+  position: relative;
+  /* z-index: 1; */
+  /* with the help of flow chart in video */
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+}
+
+.icon {
+  color: #ef8172;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonial Section */
+#testimonials {
+  background-color: #ef8172; /* here we are not removing ths colour since the testimonial have different colour and though the colour :white is removed and is present in the coloured-section inherit
+  and also by default the preference is given to the #id and then to class and then to the html elements */
+}
+
+.testimonial-text {
+  line-height: 1.5;
+  font-size: 3rem;
+}
+.carousel-item {
+  padding: 7% 15% 4%;
+}
+
+.testimonial-image {
+  width: 16%;
+  border-radius: 100%;
+  padding: 15px;
+}
+
+#press {
+  background-color:  #ef8172;
+  padding-bottom: 4%;
+}
+
+.press-logo {
+  width: 15%;
+  padding: 20px 20px 50px;
+}
+
+/* <!-- Pricing --> */
+#pricing {
+  padding: 80px;
+}
+
+.pricing-text {
+  line-height: 1.5;
+  font-size: 3rem;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Media Query for making the title and picture more responsive */
+@media (max-width:990px) {
+  #title {
+    text-align: center;  /*This is used so that when we use mobile phones or tablets the text is center aligned for that part */
+  /*         I am not removing text-align: center; from the media section since i still want the contents to be cenered when we go into mobile mode */
+}
+  .title-image {
+    position: static;
+    /*since the picture kept going down and behing the bottom coponent which is white, we used this so that the picture remains static at it's position and does not hide, instead takes it's own space on screen */
+    transform: rotate(0);
+    /*to make the rotated picture straight */
+  }
+}
+
+/* <!-- Call to Action --> */
+
+#cta {
+  text-align:center;
+  padding: 90px 20% 70px;
+  font-size: 3.5rem;
+}
+
+
+
+.call-button {
+  margin: 5% 1% 5% 1%;
+}
+
+#footer {
+  padding: 60px;
+}
+
+.stickers {
+  /* padding: 10px; */
+  margin: 10px;
+  color: black;
+
+}
+
+.copy {
+  padding-top: 20px;
+}
